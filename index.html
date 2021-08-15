@@ -28,7 +28,11 @@
     	<!-- Customized Bootstrap Stylesheet -->
     	<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="51">
+	<body data-spy="scroll" data-target=".navbar" data-offset="51" onload="myFunction()">
+		<!-- Loading page start -->
+		<div id="loading"></div>
+		<!-- Loading page End -->
+
 		<!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
@@ -580,6 +584,13 @@
     	<!-- Template JavaScript -->
     	<script src="js/main.js"></script>
 
+    	<!-- Loading page script -->
+    	<script>
+    		var preloader = document.getElementById('loading');
+    		function myFunction(){
+    			preloader.style.display = 'none';
+    		}
+    	</script>
 
 	</body>
 </html>
