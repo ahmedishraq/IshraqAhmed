@@ -29,9 +29,23 @@
     	<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="51" onload="myFunction()">
-		<!-- Loading page start -->
-		<div id="loading"></div>
-		<!-- Loading page End -->
+		
+		<!-- Loading page method 1 start -->
+		<!-- <div id="loading"></div> -->
+		<!-- Loading page method 1 End -->
+
+		<!-- Loading page method 2 start -->
+		<div id="loading">
+        <div class="center-body">
+            <div class="loader-circle-11">
+            <div class="arc"></div>
+            <div class="arc"></div>
+            <div class="arc"></div>
+            </div>
+        </div>
+    </div>
+		
+		<!-- Loading page method 2 end -->
 
 		<!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
@@ -590,6 +604,12 @@
     		function myFunction(){
     			preloader.style.display = 'none';
     		}
+
+    		// infinite time for loading page
+    		// setTimeout(function(){
+    		// 	preloder.style.display = 'none'; 
+    		// }, 5000);
+
     	</script>
 
 	</body>
