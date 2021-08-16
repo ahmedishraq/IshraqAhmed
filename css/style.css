@@ -115,6 +115,7 @@ body {
   color: #6c757d;
   text-align: left;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
  
 a {
