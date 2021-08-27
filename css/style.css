@@ -118,6 +118,12 @@ body {
   background-color: #FFFFFF;
   overflow-x: hidden;
 }
+
+.footer-bg{
+	background: #7C83FD;
+}
+
+}
  
 a {
   color: #0BCEAF;
