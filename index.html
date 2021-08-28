@@ -68,7 +68,19 @@
                 <a href="#testimonial" class="nav-item nav-link">Review</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Hire Me</a>
+            <!-- Hire me Button in navbar temporary off for toggle switch display -->
+            <!-- <a href="" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Hire Me</a> -->
+
+            <!-- Dark theme toggle switch start -->
+            <div>
+	    		<input type="checkbox" class="checkbox" id="checkbox">
+  				<label for="checkbox" class="label">
+    				<i class="fas fa-moon"></i>
+    				<i class='fas fa-sun'></i>
+    				<div class='ball'>
+  				</label>
+			</div>
+			<!-- Dark theme toggle switch end -->
         </div>
     </nav>
     <!-- Navbar End -->
@@ -88,11 +100,9 @@
         				<!--<div class="d-flex align-items-center justify-content-center justify-content-lg-startpt-5">
         					 <i class="fa fa-2x fa-download bg-primary text-white mr-1"></i>
         					<a href="https://drive.google.com/file/d/1kDrS3ijTN12mtLgEBJCzGwlBmswuJ7cP/view?usp=sharing" target="_blank" class="btn btn-white mr-4">Download CV</a>
-
         					
         					For Play Button
         					<a href="" class="btn btn-blue d-none d-sm-block">Play Video</a>
-
         					<a class="btn btn-light btn-social mr-2" href="https://github.com/ahmedishraq" target="_blank"><i class="fab fa-github"></i></a>
         				</div> -->
         			</div>
@@ -616,6 +626,16 @@
     		// }, 5000);
 
     	</script>
+
+    	<!-- Dark theme script testing start -->
+    	<!-- <script>
+    		const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+})
+    	</script> -->
+    	<!-- Dark theme script end -->
 
 	</body>
 </html>
