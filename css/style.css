@@ -207,7 +207,7 @@ h1,h2,h3,h4,h5,h6,p{
   margin: 0 20px;
   text-align: center;
   cursor: pointer;
-  display: felx;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -220,14 +220,91 @@ h1,h2,h3,h4,h5,h6,p{
   display: block;
   height: 60px;
   width: 60px;
-  color: #fff;
-  background: #364f6b;
+  color: #364f6b;
+  background: #fff;
   border-radius: 50%;
   position: relative;
   z-index: 2;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
               0 6px 6px rgba(0, 0, 0, 0.23);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span i{
+	line-height: 60px;
+	font-size: 25px;
+}
+
+.wrapper .icon .tooltip{
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	background: #fff;
+	color: #fff;
+	padding: 10px 18px;
+	font-size: 20px;
+	border-radius: 25px;
+	opacity: 0;
+	pointer-events: none;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	transition: 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+	top: -70px;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.icon .tooltip:before{
+	position: absolut:
+	content: "";
+	height: 15px;
+	width: 15px;
+	background: #fff;
+	left: 50%;
+	bottom: -6px;
+	transform: translateX(-50%) rotate(45deg);
+	transition: 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover span{
+	color: #fff;
+}
+
+.wrapper .icon:hover:span,
+.wrapper .icon:hover .tooltip{
+	text-shdow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before{
+	background: #3B5999;
+}
+
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before{
+	background: #46C1F6;
+}
+
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before{
+	background: #cd486b;
+}
+
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before{
+	background: #333;
+}
+
+.wrapper .linkedin:hover span,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip:before{
+	background: #0077b5;
 }
 
 /* new social media icon testing ends */
