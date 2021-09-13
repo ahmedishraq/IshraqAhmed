@@ -430,6 +430,196 @@ h1,h2,h3,h4,h5,h6,p{
   transition: 2s;
 }
 
+/* New progress bar testing start*/
+
+.progress-container{
+	display: flex;
+	margin: 20px;
+	align-items: center;
+}
+
+.progress-skill{
+	flex: 1;
+	height: 12px;
+	border-radius: 8px;
+	background: rgb(240,240,240);
+	box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
+}
+
+.progress-width{
+	height: 12px;
+	width: 0;
+	border-radius: 8px;
+	display: inline-block;
+	position: relative;
+	animation: 1s ease-out forwards;
+}
+
+.progress-width::after{
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	right: -10px;
+	top: -6px;
+	border-radius: 50%;
+	background: rgb(255,255,255);
+	box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.java{
+	animation-name: slideJAVA;
+	background: rgb(2, 117, 216);
+}
+
+.java::after{
+	border: 2px solid rgb(2, 117, 216);
+}
+
+.python{
+	animation-name: slidePYTHON;
+	background: rgb(255,193,7);
+}
+
+.python::after{
+	border: 2px solid rgb(255,193,7); 
+}
+
+.html{
+	animation-name: slideHTML;
+	background: rgb(255,51,0);
+}
+
+.html::after{
+	border: 2px solid rgb(255,51,0);
+}
+
+.android{
+	animation-name: slideANDROID;
+	background: rgb(92, 184, 92);
+}
+
+.android::after{
+	border: 2px solid rgb(92, 184, 92);
+}
+
+.teamwork{
+	animation-name: slideTEAMWORK;
+	background: rgb(91, 192, 222);
+}
+
+.teamwork::after{
+	border: 2px solid rgb(91, 192, 222);
+}
+
+.ai{
+	animation-name: slideAI;
+	background: rgb(92, 184, 92);
+}
+
+.ai::after{
+	border: 2px solid rgb(92, 184, 92) ;
+}
+
+.illustrator{
+	animation-name: slideILLUSTRATOR;
+	background: rgb(91, 192, 222);
+}
+
+.illustrator::after{
+	border: 2px solid rgb(91, 192, 222);
+}
+
+.word{
+	animation-name: slideWORD;
+	background: rgb(2, 117, 216);
+}
+
+.word::after{
+	border: 2px solid rgb(2, 117, 216);
+}
+
+.git{
+	animation-name: slideGIT;
+	background: rgb(255,193,7);
+}
+
+.git::after{
+	border: 2px solid rgb(255,193,7);
+}
+
+.data{
+	animation-name: slideDATA;
+	background: rgb(255,51,0);
+}
+
+.data::after{
+	border: 2px solid rgb(255,51,0);
+}
+
+@keyframes slideJAVA {
+	to{
+		width: 85%;
+	}
+}
+
+@keyframes slidePYTHON{
+	to{
+		width: 65%;
+	}
+}
+
+@keyframes slideHTML{
+	to{
+		width: 80%;
+	}
+}
+
+@keyframes slideANDROID{
+	to{
+		width: 50%;
+	}
+}
+
+@keyframes slideTEAMWORK{
+	to{
+		width: 80%;
+	}
+}
+
+@keyframes slideAI{
+	to{
+		width: 50%;
+	}
+}
+
+@keyframes slideILLUSTRATOR{
+	to{
+		width: 60%;
+	}
+}
+
+@keyframes slideWORD{
+	to{
+		width: 80%;
+	}
+}
+
+@keyframes slideGIT{
+	to{
+		width: 50%;
+	}
+}
+
+@keyframes slideDATA{
+	to{
+		width: 80%;
+	}
+}
+
+/* New progress bar testing end*/
+
 
 /* =================== Queality ======================*/
 .ex-me{
