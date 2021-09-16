@@ -237,7 +237,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .wrapper .icon .tooltip{
 	position: absolute;
-	top: 0;
+	top: 0px;
 	z-index: 1;
 	background: #fff;
 	color: #fff;
@@ -307,6 +307,14 @@ h1,h2,h3,h4,h5,h6,p{
 	background: #0077b5;
 }
 
+.wrapper .cv:hover span,
+.wrapper .cv:hover .tooltip,
+.wrapper .cv:hover .tooltip:before{
+	background: #6bb571;
+}
+
+
+
 /* new social media icon testing ends */
 
 
@@ -315,8 +323,6 @@ h1,h2,h3,h4,h5,h6,p{
 	font-size: 35px;
 }
 /*animated hourglass icon end*/
-
-
 
 /********** Template CSS ************/
 
