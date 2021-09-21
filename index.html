@@ -30,6 +30,11 @@
 
     	<!-- Customized Bootstrap Stylesheet -->
     	<link href="css/style.css" rel="stylesheet">
+
+    	<!-- Trigger css animation testing -->
+    	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="51" onload="myFunction()">
 		
@@ -142,27 +147,27 @@
  -->
 					<!--new social media icon testing start  -->
 					<div class="wrapper">
-						<div class="icon facebook">
+						<div class="icon facebook" data-aos="flip-up" data-aos-delay="1000">
 							<div class="tooltip">Facebook</div>
 							<a href="https://facebook.com/ishraq.ahmed.14" target="_blank"><span><i class="fab fa-facebook-f"></i></span></a>
 						</div>
-						<div class="icon twitter">
+						<div class="icon twitter" data-aos="flip-up" data-aos-delay="1200">
 							<div class="tooltip">Twitter</div>
 							<a href="https://twitter.com/ahmed_ishraq" target="_blank"><span><i class="fab fa-twitter"></i></span></a>
 						</div>
-						<div class="icon instagram">
+						<div class="icon instagram" data-aos="flip-up" data-aos-delay="1400">
 							<div class="tooltip">Instagram</div>
 							<a href="https://instagram.com/ahmed_ishraq" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
 						</div>	
-						<div class="icon github">
+						<div class="icon github" data-aos="flip-up" data-aos-delay="1600">
 							<div class="tooltip">Github</div>
 							<a href="https://github.com/ahmedishraq" target="_blank"><span><i class="fab fa-github"></i></span></a>
 						</div>
-						<div class="icon linkedin">
+						<div class="icon linkedin" data-aos="flip-up" data-aos-delay="1800">
 							<div class="tooltip">Linkedin</div>
 							<a href="http://linkedin.com/in/ishraq-ahmed-esha-244978172" target="_blank"><span><i class="fab fa-linkedin-in"></i></span></a>
 						</div>
-						<div class="icon cv">
+						<div class="icon cv" data-aos="flip-up" data-aos-delay="2000">
 							<div class="tooltip">Download&nbsp;CV</div>
 							<a href="https://drive.google.com/file/d/1CE9oWow79XBhrm5QUxYfvpyVE30aP1QY/view?usp=sharing" target="_blank"><span><i class="fas fa-file-download"></i></span></a>
 						</div>
@@ -721,6 +726,15 @@ checkbox.addEventListener('change', ()=>{
 })
     	</script> -->
     	<!-- Dark theme script end -->
+
+
+    	<!-- trigger css animation start -->
+
+    	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  		<script>
+    		AOS.init();
+  		</script>
+    	<!-- trigger css animation end -->
 
 	</body>
 </html>
