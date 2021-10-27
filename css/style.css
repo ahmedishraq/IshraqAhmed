@@ -921,3 +921,40 @@ p: nth-child(2)
     transform: translateY(-15px);
   }
 }
+
+/* New hire button design start*/
+.button-hire {
+ padding: 10px;
+ font-size: 18px;
+ outline: none;
+ border: 2px solid black;
+ background-color: white;
+ color: white;
+ position: relative;
+ letter-spacing: 1px;
+}
+
+.button-hire::before {
+ content: 'Hire Me';
+ /*Button's value/text-content */
+ position: absolute;
+ top: -14%;
+ left: 7%;
+ background-color: black;
+ width: 100%;
+ height: 100%;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: 0.15s ease-in-out;
+ font-weight: bold;
+}
+
+.button-hire:hover::before {
+ top: 0;
+ left: 0;
+}
+
+
+/* New hire button design end*/
