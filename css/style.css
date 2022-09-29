@@ -201,7 +201,7 @@ a:hover {
 }
 
 .app:hover{
-  color: red;
+  color: #1095c1;
   text-decoration: none;
 }
 
@@ -822,6 +822,7 @@ p: nth-child(2)
 }
 /* The circle on the timeline ends */
 
+
 /* Add arrows to the left conatainer (pointing right) start */
 .left::before{
   content: '';
@@ -858,9 +859,10 @@ p: nth-child(2)
 
 .content-timeline{
   padding: 10px 30px;
-  background-color: #74AFBE;
+  background-color: #ffffff;
   position: relative;
-  border-radius: 6px;
+  border-radius: 4px;
+
 }
 
 /* ====================== Testimonial ================*/
