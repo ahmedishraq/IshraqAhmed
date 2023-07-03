@@ -717,6 +717,12 @@ p: nth-child(2)
   margin-top: 35px;
 }
 
+/* =================== Education & Experience ======== */
+
+ul{
+  color: black;
+}
+
 
 /* =================== Service Section ==================*/
 .service-h4{
